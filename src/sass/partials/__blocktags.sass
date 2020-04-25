@@ -1,0 +1,55 @@
+body
+    margin-bottom: 70px
+    font-family: $font 
+    background-color: $color-white
+    
+.Headline_H1
+    font-style: bold
+    font-weight: 800
+    margin-top: 20px
+    @include fontSize(40)
+
+p
+    margin-bottom: 0px
+
+        
+        
+// To style all anchor elements I had to use "!important". 
+// This is not recomended but the CA stated that all a-elements shoulc be styled. 
+
+// I have also styled (commented out) the anchor tags by using a class specific method in the __header.sass file. 
+a
+    color: $color-white !important
+    &:hover
+        color: $color-black!important
+
+#App    
+    @include breakpoint($md)
+        margin-bottom: 90px
+       
+
+.btn
+    border-radius: 0
+    font-weight: 600
+    background: $color-orange
+    color: $color-white
+    margin-top: 10px
+    width: 60%
+    max-width: 150px
+    @include breakpoint($md)
+        width: 100%
+        max-width: 100%
+    &:hover
+        color: $color-white
+        background: $color-orangeHover
+
+    @include breakpoint($md)
+        width: 100%
+
+
+
+
+
+
+
+

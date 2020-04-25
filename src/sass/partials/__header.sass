@@ -1,0 +1,47 @@
+//NAVBAR
+#App > nav
+    // CHANGE BG_COLOR AND SPACING  
+    background-color: $color-blue
+    background-image: none
+    // REMOVE SPACING BETWEEN NAV AND CONTENT
+    margin-bottom: 0
+    padding-top: 0px
+    padding-bottom: 0px
+
+
+    border: none
+    //REMOVE ROUNDED CORNERS
+    border-radius: 0
+
+// NAV-BRAND
+#App > nav > a > span
+        color: $color-white
+        @include fontSize(38)
+        font-style: bold
+        padding: 0px, 0px, 0px, 0px
+
+        &:hover
+            color: $color-black
+            cursor: pointer
+
+// MENU
+// BORDERS
+#basic-navbar-nav > div > a.nav-link
+    border-right: 2px solid $color-white
+    padding: 0px 20px
+    margin: 15px 0px 15px 5px
+    @include fontSize(15)
+
+    @include breakpoint($md)
+        border: none
+    
+#basic-navbar-nav > div > a:nth-child(3)
+    border: none
+
+
+// Hamburger
+#App > nav > button
+    color: blue
+
+
+

@@ -1,0 +1,21 @@
+.package
+    border: 1px solid $color-orange
+    padding: 1em
+    margin-top: 20px
+    &:hover
+        background-color: $color-lightPink
+        cursor: pointer
+    &__container
+        padding: 0
+        &--title
+            @include fontSize(30)
+            
+.noBorder
+    border: none
+    background-color: none
+    margin-top: 0px
+    &:hover
+        background-color: $color-white
+        cursor: pointer
+
+.packageHome

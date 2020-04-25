@@ -1,0 +1,15 @@
+// PX TO REM
+@mixin fontSize($x)
+    font-size:($x/16)*1rem
+    
+//BREAKPOINT
+$sm : 576px
+$md : 768px
+$lg : 992px
+$xl : 1200px
+
+
+@mixin breakpoint($breakpoint)
+    // Get the breakpoint value.
+    @media (max-width: ($breakpoint - 1))
+        @content
