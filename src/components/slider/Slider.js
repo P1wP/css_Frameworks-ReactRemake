@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 //import {imageAssets} from "../../constants/SliderImages.js"
 //import SliderItem from "./SliderItem";
-import PropType from "prop-types";
+
 
 
 import banner1 from "../../assets/img/banner1.jpg";

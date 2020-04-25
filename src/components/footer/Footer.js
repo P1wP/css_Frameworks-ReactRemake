@@ -7,7 +7,7 @@ export function Footer(){
             <div className="container">
                 <p className="footer-copyright">Copywrite &copy; 19</p>  
             </div>
-    </footer>
+        </footer>
     );
 }
 
